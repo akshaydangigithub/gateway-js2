@@ -44,8 +44,12 @@ let p2 = new Promise(function (resolve, reject) {
 
 p2.then(function (data) {
   console.log(data);
-  return data.name
+  return data;
 })
+  .then(function (data) {
+    console.log(data);
+    return data.name
+  })
   .then(function (data) {
     console.log(data);
   })
