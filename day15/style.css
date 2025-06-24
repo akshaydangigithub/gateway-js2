@@ -1,0 +1,59 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: auto;
+  width: 50%;
+  background-color: rgb(225, 225, 225);
+  padding: 20px;
+  border-radius: 10px;
+
+  > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  > input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    margin-bottom: 15px;
+  }
+
+  > button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+
+  .result {
+    margin-top: 20px;
+    span {
+      background-color: black;
+      color: white;
+      margin-left: 10px;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+  }
+}

@@ -32,7 +32,33 @@
 let main = document.querySelector("main");
 let button  =document.querySelector("button");
 
+
+
+let theme = "light"
+
 button.addEventListener("click", function(){
-   main.style.backgroundColor = "black";
-   main.style.color = "white"
+
+   if(theme === "light"){
+
+      main.style.backgroundColor = "black";
+      main.style.color = "white"
+      button.style.backgroundColor = "white"
+      button.style.color = "black"
+      button.innerHTML = "light"
+
+      theme = "dark"
+   } else {
+      
+      main.style.backgroundColor = "white";
+      main.style.color = "black"
+      button.style.backgroundColor = "black"
+      button.style.color = "white"
+      button.innerHTML = "dark"
+
+      theme = "light"
+   }
+
+
 })
+
+
