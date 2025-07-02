@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .bulb {
+      height: 300px;
+      width: 300px;
+      background-color: rgb(255, 187, 0);
+      border-radius: 50%;
+      filter: blur(25px);
+      /* border: 2px solid orange; */
+    }
+
+    button {
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid orange;
+      background-color: transparent;
+      cursor: pointer;
+      color: rgb(183, 119, 0);
+      margin-top: 60px;
+    }
+  </style>
+  <body>
+    <div
+      class="box"
+      style="height: 100px; width: 100px; background-color: red"
+    ></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

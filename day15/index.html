@@ -19,26 +19,26 @@
     <button type="button">Submit</button> -->
 
     <main>
-      <h3>Temprature Converter</h3>
+      <h3>Temperature Converter</h3>
 
-      <input type="number" placeholder="Enter your value" />
+      <input type="number" id="input" placeholder="Enter your value" />
 
-      <select name="" id="">
-        <option value="">Kelvin</option>
-        <option value="">Fahrenheit</option>
-        <option value="">Celsius</option>
+      <select name="" id="fromUnit">
+        <option value="K">Kelvin</option>
+        <option value="F">Fahrenheit</option>
+        <option value="C">Celsius</option>
       </select>
 
-      <select name="" id="">
-        <option value="">Kelvin</option>
-        <option value="">Fahrenheit</option>
-        <option value="">Celsius</option>
+      <select name="" id="toUnit">
+        <option value="K">Kelvin</option>
+        <option value="F">Fahrenheit</option>
+        <option value="C">Celsius</option>
       </select>
 
       <button>Calculate</button>
 
       <div class="result">
-        <h4>Result: <span>456.78C</span></h4>
+        <h4>Result: <span id="ans">00.00</span></h4>
       </div>
     </main>
 

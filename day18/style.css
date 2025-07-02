@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.card{
+    width: 100%;
+    border: 2px solid black;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+
+    >img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    >h3{
+      margin-top: 10px;
+    }
+
+    >.email{
+        color: royalblue;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+}
