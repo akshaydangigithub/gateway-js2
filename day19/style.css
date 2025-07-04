@@ -1,0 +1,104 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: 550px;
+  width: 390px;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-left: 5px;
+  position: relative;
+}
+
+.story-main {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.story-main::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  height: 70px;
+  width: 70px;
+  border: 2.5px solid rgb(252, 67, 0);
+  border-radius: 50%;
+  flex-shrink: 0;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.popup {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url("https://images.unsplash.com/photo-1678286742832-26543bb49959?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHVzZXJ8ZW58MHx8MHx8fDA%3D");
+  background-position: top;
+  display: none;
+}
+
+.progress {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.p-inner{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(110, 110, 110);
+    animation: move 5s linear;
+}
+
+
+@keyframes move {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.close {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-left: auto;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
